@@ -16,4 +16,11 @@
         from BILL
     </select>
 
+    <!--要用的-->
+    <select id="selectLtListType" resultMap="BaseResultMap">
+        select
+        *
+        from BILL
+    </select>
+
 </mapper>
