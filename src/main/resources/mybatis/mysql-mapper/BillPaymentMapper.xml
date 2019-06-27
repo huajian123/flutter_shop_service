@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.example.flutter_shop_service.dao.mapper.BillPaymentMapper">
+    <resultMap id="BaseResultMap" type="com.example.flutter_shop_service.dao.entity.BillPaymentDo">
+        <result property="id" jdbcType="VARCHAR" column="ID"/>
+        <result property="billNo" jdbcType="VARCHAR" column="BILL_NO"/>
+        <result property="paymentProjectId" jdbcType="VARCHAR" column="PAYMENT_PROJECT_ID"/>
+    </resultMap>
+
+    <!--要用的-->
+    <select id="selectLtList" resultMap="BaseResultMap">
+        select
+        *
+        from BILL
+    </select>
+
+</mapper>

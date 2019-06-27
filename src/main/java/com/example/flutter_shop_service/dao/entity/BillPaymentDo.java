@@ -1,6 +1,7 @@
-package com.example.flutter_shop_service.service.VO;
+package com.example.flutter_shop_service.dao.entity;
 
-public class DataVO {
+public class BillPaymentDo {
+
     /**
      * 主键ID
      */
